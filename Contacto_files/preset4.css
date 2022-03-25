@@ -1,0 +1,217 @@
+a {
+  color: #888866;
+}
+.sp-megamenu-parent .sp-dropdown li.sp-menu-item >a:hover {
+  background: #888866;
+}
+#sp-bottom2 span,
+.sp-megamenu-parent .sp-dropdown li.sp-menu-item.active>a {
+  color: #888866;
+}
+#offcanvas-toggler >i:hover {
+  color: #888866;
+}
+.btn-primary,
+.sppb-btn-primary {
+  border-color: #cfd19f;
+  background-color: #888866;
+}
+.btn-primary:hover,
+.sppb-btn-primary:hover {
+  border-color: #6d6d43;
+  background-color: #c7c68e;
+}
+.social-links>a,
+ul.social-icons >li a:hover {
+  color: #888866;
+}
+.sp-page-title {
+  background: #888866;
+}
+.layout-boxed .body-innerwrapper {
+  background: #5c5c2d;
+}
+.sp-module ul >li >a {
+  color: #000000;
+}
+.sp-module ul >li >a:hover {
+  color: #888866;
+}
+.sp-module .letestnews >div >a {
+  color: #000000;
+}
+.sp-module .letestnews >div >a:hover {
+  color: #888866;
+}
+.sp-module .tagscloud .tag-name:hover {
+  background: #888866;
+}
+.sp-simpleportfolio .sp-simpleportfolio-filter > ul > li.active > a,
+.sp-simpleportfolio .sp-simpleportfolio-filter > ul > li > a:hover {
+  background: #888866;
+}
+.search .btn-toolbar button {
+  background: #888866;
+}
+.post-formet {
+  background: #888866;
+}
+.voting-symbol span.star.active:before {
+  color: #888866;
+}
+.sp-reting span.star:hover:before,
+.sp-reting span.star:hover ~ span.star:before {
+  color: #c7c68e;
+}
+.entry-link,
+.entry-quote {
+  background: #888866;
+}
+.lt-team-item,
+blockquote {
+  border-color: #888866;
+}
+.carousel-left:hover,
+.carousel-right:hover {
+  background: #888866;
+}
+#sp-footer {
+  background: #888866;
+}
+.sp-comingsoon body {
+  background-color: #888866;
+}
+.paginetion>li>a,
+.paginetion>li>span {
+  color: #000000;
+}
+.paginetion>li>a:hover,
+.paginetion>li>a:focus,
+.paginetion>li>span:hover,
+.paginetion>li>span:focus {
+  color: #000000;
+}
+.paginetion>.active>a,
+.paginetion>.active>span {
+  border-color: #888866;
+  background-color: #888866;
+}
+.paginetion>.active>a:hover,
+.paginetion>.active>a:focus,
+.paginetion>.active>span:hover,
+.paginetion>.active>span:focus {
+  border-color: #888866;
+  background-color: #888866;
+}
+.qx-btn:before,
+.qx-btn:hover,
+.lt-slider .tp-caption a,
+.lt-intro-item:hover i,
+.lt-felture-item:hover i,
+.lt-portfolio-button:hover,
+.lt-action-button:hover,
+.lt-table-item:hover button,
+#lt-pricing .single-table:nth-child(2) {
+  background: #888866;
+}
+.lt-about-content-item i,
+.lt-title h2,
+.lt-intro-item i,
+.lt-felture-item h4,
+.lt-table-item h3,
+.lt-service-item h4,
+.lt-service-item i,
+.lt-table-item .table-price .price,
+.lt-table-item button:hover a,
+.lt-testimonial p.qx-designltion,
+.lt-testimonial button {
+  color: #888866; 
+}
+.lt-felture-item:hover i,
+.lt-portfolio-button:hover,
+.lt-action-button:hover,
+.lt-table-item:hover,
+.lt-service-item .button-service,
+.lt-table-item button,
+.lt-subscribe-content table .button:hover {
+  border-color: #888866;
+}
+/* Important */
+.lt-slider .tp-caption  b,
+.lt-team-item:hover p,
+.lt-about h4,
+.lt-title h6,
+.lt-title-1 h6,
+.lt-service-item:hover h3,
+.lt-feature-item i,
+.lt-service-item-second i,
+.lt-title h4,
+.lt-slider .tp-caption a.lt-button-slider,
+.lt-team-item .qx-person-position,
+.lt-about h5,
+.lt-counter-item i,
+.lt-about-item i,
+.lt-team-item h4,
+.lt-blog div.k2ItemsBlock ul li a,
+.lt-services-item:hover i,
+.lt-services-item:hover h4 {
+  color: #888866!important; 
+}
+.lt-contact #sp-quickcontact-form .button:hover,
+.projects-filter a.selected,
+ .lt-why-chose-item i,
+ .lt-counter,
+.button,
+ #lt-testimonial .button:hover,
+ #lt-feature .lt-button:hover,
+.lt-service-item .button-service,
+ .lt-pricing-item .table-footer,
+ .lt-pricing-item .table-heading,
+ .lt-we-do-item .qx-progress-bar,
+ .lt-allowing,
+.ariQuizQuestionTitle,
+ .social a i:hover,
+.lt-about-item:hover i,
+.lt-we-do-item i,
+.lt-contact-item:hover i,
+.lt-contact-form button,
+.lt-subscribe-content table .button:hover {
+  background: #888866!important;  
+}
+.lt-bar-counter .qx-progress-bar,
+.lt-title h5:after, .lt-title h5:before,
+#lt-pricing .qx-btn {
+  background-color:#888866!important;  
+}
+.qx-btn,
+.lt-contact #sp-quickcontact-form .button:hover,
+.lt-service-item:hover,
+.sp-megamenu-parent >li.active>a, 
+.sp-megamenu-parent >li:hover>a,
+.lt-contact-item i,
+.lt-service-item:hover i,
+.lt-service-item-second:hover i,
+.lt-about-item i,
+.lt-we-do-item i {
+  border-color: #888866!important; 
+}
+.projects-wrapper .project-img .project-img-extra {
+    background-image: -webkit-linear-gradient(top , #888866ad 0%, #888866a1 100%)!important;
+}
+.lt-accordion .collapsible-header {
+    background: #888866!important;
+    background: -webkit-gradient(linear, left top, right top, from(#888866), to(#6d6d43))!important;
+    background: linear-gradient(to right, #888866, #6d6d43)!important;
+    -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2)!important;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2)!important;
+}
+.lt-team-item:hover {
+    background: #888866!important;
+    background: -webkit-gradient(linear, left top, right top, from(#888866), to(#584502))!important;
+    background: linear-gradient(to right, #888866, #423401)!important;
+}
+#lt-pricing .lt-pricing-sub:nth-child(2) .single-table:after {
+    background: #888866!important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#888866), to(#463702))!important;
+    background: linear-gradient(to bottom, #888866, #5a4702)!important;
+}
