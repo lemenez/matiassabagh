@@ -1,0 +1,15 @@
+/****view-quizzes ****/
+.view-quizzes a {
+  font-size:20px;
+}
+ .ariQuizQuestionRight p {
+     font-size: 28px;
+     font-weight: 700;
+}
+.ariQuizHeaderName {
+    font-weight: bold;
+    font-size: 23px;
+}
+.ariQuizQuestionTable tr {
+    padding:20px;
+}
