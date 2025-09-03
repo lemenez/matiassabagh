@@ -28,7 +28,7 @@
 
     @media (min-width: $breakpoint-xxxl) {
         margin-top: calc((var(--container-xxxl) - 78px) / 4 * (391 / 299.75) / 2 * -1);
-        padding-top: calc((var(--container-xxxl) - 78px) / 4 * (391 / 299.75) / 2);
+        padding-top: calc((var(--container-xxxl)) / 4 * (391 / 299.75) / 2);
     }
 }
 
@@ -122,6 +122,7 @@
 
     @media (min-width: $breakpoint-xxxl) {
         font-size: 5.7rem;
+        top: -14rem;
     }
 }
 
@@ -136,6 +137,11 @@
     /* Colapsa los espacios en blanco pero respeta los saltos de línea */
     @media (min-width: $breakpoint-md) {
         font-size: 1.16rem;
+        margin-top: 0;
+    }
+    
+    @media (min-width: $breakpoint-xxxl) {
+        font-size: 1.4rem;
         margin-top: 0;
     }
 }

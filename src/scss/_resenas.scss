@@ -23,10 +23,12 @@
 
         @media (min-width: $breakpoint-xxl) {
             font-size: 4.7rem;
+            margin-top: -2rem;
         }
 
         @media (min-width: $breakpoint-xxxl) {
             font-size: 5.7rem;
+            margin-top: -3.5rem;
         }
     }
 
@@ -78,6 +80,7 @@
         cursor: grab;
         cursor: -moz-grab;
         cursor: -webkit-grab;
+        overflow: visible!important;
     }
 
     // Efectos de difuminación sobre las capas sólidas

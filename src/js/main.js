@@ -434,6 +434,9 @@ document.addEventListener('DOMContentLoaded', () => {
             after: 20
         },
         breakpoints: {
+            4000: {
+                perView: 5.2
+            },
             1900: {
                 perView: 4.6
             },

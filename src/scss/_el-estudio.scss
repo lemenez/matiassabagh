@@ -69,6 +69,15 @@
             height: 20px;
         }
     }
+
+      @media (min-width: $breakpoint-xxxl) {
+        padding: 14px 24px;
+        font-size: 1.35rem;
+        .btn-icon {
+            width: 20px;
+            height: 20px;
+        }
+    }
 }
 
 #el-estudio .image-content {

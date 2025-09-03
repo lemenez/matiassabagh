@@ -13,11 +13,11 @@
     letter-spacing: 0%;
     text-transform: uppercase;
     position: relative;
-
+    text-align: center;
     @media (min-width: $breakpoint-md) {
         font-size: 3.9rem;
         white-space: pre-line;
-        text-align: start;
+        text-align: center;
     }
 
     @media (min-width: $breakpoint-xl) {
