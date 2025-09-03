@@ -1,0 +1,123 @@
+#como-trabajo {
+    background-color: var(--accent-bg);
+    h2 {
+        font-size: 3.3rem;
+        color: white;
+        white-space: pre-line;
+        font-weight: 800;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+        position: relative;
+        line-height: normal;
+        margin: 0;
+        @media (min-width: $breakpoint-md) {
+            font-size: 3.9rem;
+        }
+
+        @media (min-width: $breakpoint-xl) {
+            font-size: 4.3rem;
+        }
+
+        @media (min-width: $breakpoint-xxl) {
+            font-size: 4.7rem;
+        }
+
+        @media (min-width: $breakpoint-xxxl) {
+            font-size: 5.7rem;
+        }
+    }
+     .como-trabajo-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transform: translateY(-2.4rem);
+        flex-direction: column;
+
+         @media (min-width: $breakpoint-md) {
+            transform: translateY(-2.5rem);
+            flex-direction: row;
+        }
+
+        @media (min-width: $breakpoint-xl) {
+             transform: translateY(-2.5rem);
+        }
+
+        @media (min-width: $breakpoint-xxl) {
+            transform: translateY(-3rem);
+        }
+
+        @media (min-width: $breakpoint-xxxl) {
+            transform: translateY(-3.5rem);
+        }
+        .btn {
+            background-color: #fff;
+            color: var(--accent-bg);
+            padding: 22px 30px;
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1.8rem;
+            line-height: 100%;
+            letter-spacing: 0%;
+            @media (min-width: $breakpoint-md) {
+                padding: 15px 22px;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+
+.how-it-works-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 26px;
+    flex-direction: column;
+    @media (min-width: $breakpoint-md) {
+        flex-direction: row;
+        .how-it-works-item {
+            flex: 0 0 calc(33.333% - 20px);
+            max-width: calc(33.333% - 20px);
+            aspect-ratio: 423.67 / 315;
+        }
+    }
+
+}
+
+.how-it-works-item {
+    background-color: transparent;
+    border: 1px solid #767676;
+    border-radius: 5px;
+    text-align: left;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    span {
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 150%;
+        letter-spacing: 0%;
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 1.7rem;
+        line-height: 150%;
+        letter-spacing: 0%;
+        margin: 0;
+    }
+
+
+
+    p {
+        font-weight: 400;
+        font-size: 1.3rem;
+        line-height: 150%;
+        letter-spacing: 0%;
+        margin: 10px 0 0;
+    }
+}

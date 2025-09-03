@@ -1,0 +1,250 @@
+/* ========================================
+   MODAL COMPONENT
+======================================== */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(33, 33, 33, 0.9);
+    backdrop-filter: blur(6px);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.4s ease-in-out, opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+    transform: translateY(100%);
+    /* Inicia el modal fuera de la vista, abajo */
+    z-index: 1000;
+    height: 100vh;
+    overflow-y: hidden;
+
+    @media (min-width: $breakpoint-md) {
+        height: 85vh;
+        top: 15vh;
+    }
+}
+
+.modal.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    /* Desliza el modal hacia arriba */
+}
+
+.modal-content {
+    /* Limita la altura máxima del contenido del modal */
+    overflow-y: hidden;
+    height: 100%;
+
+    .container {
+        height: 100%;
+    }
+
+    #bateria-modal-content {
+        overflow-y: hidden;
+        height: 100%;
+        position: relative;
+    }
+
+    position: relative;
+
+    /* Transición para el contenido si fuera necesario */
+    .bateria-images-container {
+        width: 100%;
+        height: calc(100% - 150px - 10rem);
+
+        &.is-array {
+            height: calc(100% - 60px - 10rem);
+        }
+
+        padding-bottom: 4rem;
+
+        @media (min-width: $breakpoint-md) {
+            padding-bottom: 10rem;
+        }
+
+        overflow-y: scroll;
+        overflow-x: hidden;
+        /*Estilos estándar experimentales (Principalmente Firefox)*/
+        scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+        scrollbar-width: thin;
+        /* Ocultar para Firefox por defecto */
+
+        &::-webkit-scrollbar {
+            width: 8px;
+            /* Tamaño del scroll en vertical */
+            /*    height: 8px;     Tamaño del scroll en horizontal */
+        }
+
+        /* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+        &::-webkit-scrollbar-thumb {
+            background: #e1e1e1;
+            border-radius: 4px;
+        }
+
+        /* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #b3b3b3;
+            box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Cambiamos el fondo cuando esté en active */
+        &::-webkit-scrollbar-thumb:active {
+            background-color: #999999;
+        }
+
+        /* Ponemos un color de fondo y redondeamos las esquinas del track */
+        &::-webkit-scrollbar-track {
+            background: #F8F8F8;
+            border-radius: 4px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        /* Cambiamos el fondo cuando esté en active o hover */
+        &::-webkit-scrollbar-track:hover,
+        &::-webkit-scrollbar-track:active {
+            background: #e1e1e1;
+        }
+    }
+
+    .bateria-images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 15px;
+        flex-direction: column;
+
+        @media (min-width: $breakpoint-md) {
+            flex-direction: row;
+            gap: 26px;
+
+            &>* {
+                flex: 0 0 calc(50% - 26px);
+                max-width: calc(50% - 26px);
+            }
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+}
+
+#equipamiento-modal .bateria-images-container {
+    height: calc(100% - 90px - 10rem);
+}
+
+.modal-content .section-title {
+    color: white;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    margin: 55px 0 0 0;
+
+    @media (min-width: $breakpoint-md) {
+        font-size: 4rem;
+        margin: 0;
+    }
+}
+
+.modal-content .section-description {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    margin: 3rem 0;
+}
+
+.modal-content .section-description-array {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0;
+    width: 100%;
+    column-gap: 26px;
+    padding-bottom: 3rem;
+    flex-direction: column;
+
+    p {
+        font-weight: 400;
+        font-size: 1.35rem;
+        line-height: 1.8rem;
+        letter-spacing: 0%;
+    }
+
+    @media (min-width: $breakpoint-md) {
+        flex-direction: row;
+        gap: 26px;
+
+        &>* {
+            flex: 0 0 calc(33.333% - 20px);
+            max-width: calc(33.333% - 20px);
+
+        }
+    }
+
+
+    h4 {
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.equipamiento-category {
+
+    /* Permite que las categorías ocupen casi la mitad del ancho en pantallas grandes */
+    h3 {
+        color: white;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            color: white;
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 200%;
+            letter-spacing: 0%;
+
+        }
+    }
+}
+
+.modal-close-button {
+    position: absolute;
+    top: 0px;
+    right: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 99;
+
+    img {
+        width: 40px;
+    }
+
+    @media (min-width: $breakpoint-md) {
+        right: 25px;
+    }
+}

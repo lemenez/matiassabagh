@@ -1,0 +1,165 @@
+/* ========================================
+   LAYOUT & CONTAINER SYSTEM
+======================================== */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem; /* Ajusta este valor según sea necesario */
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+/* Variables para breakpoints de containers */
+:root {
+    --container-sm: 540px;
+    --container-md: 700px;
+    --container-lg: 900px;
+    --container-xl: 1000px;
+    --container-xxl: 1190px;
+    --container-xxxl: 1200px;
+}
+
+/* Container base - similar a Bootstrap */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Breakpoints responsive - Bootstrap style */
+@media (min-width: $breakpoint-sm) {
+    .container {
+        max-width: var(--container-sm);
+    }
+}
+
+@media (min-width: $breakpoint-md) {
+    .container {
+        max-width: var(--container-md);
+    }
+}
+
+@media (min-width: $breakpoint-lg) {
+    .container {
+        max-width: var(--container-lg);
+    }
+}
+
+@media (min-width: $breakpoint-xl) {
+    .container {
+        max-width: var(--container-xl);
+    }
+}
+
+@media (min-width: $breakpoint-xxl) {
+    .container {
+        max-width: var(--container-xxl);
+    }
+}
+
+@media (min-width: $breakpoint-xxxl) {
+    .container {
+        max-width: var(--container-xxxl);
+    }
+}
+
+/* Container fluid siempre ocupa el 100% */
+.container-fluid {
+    max-width: none;
+    box-sizing: border-box;
+}
+
+/* ========================================
+   CONTAINER ALIGNMENT UTILITIES
+======================================== */
+
+/* Container alineado a la izquierda */
+.container-left {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Container alineado a la derecha */
+.container-right {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Breakpoints para containers alineados */
+// @media (min-width: $breakpoint-sm) {
+//     .container-left {
+//         max-width: calc(var(--container-sm) + (100vw - var(--container-sm)) / 2);
+//         padding-right: 15px;
+//     }
+//     .container-right {
+//         max-width: calc(var(--container-sm) + (100vw - var(--container-sm)) / 2);
+//         padding-left: 15px;
+//     }
+// }
+
+@media (min-width: $breakpoint-md) {
+    .container-left {
+        max-width: calc(var(--container-md) + (100vw - var(--container-md)) / 2);
+        margin: 0;
+        margin-right: auto;
+    }
+    .container-right {
+        max-width: calc(var(--container-md) + (100vw - var(--container-md)) / 2);
+        margin: 0;
+        margin-left: auto;
+    }
+}
+
+@media (min-width: $breakpoint-lg) {
+    .container-left {
+        max-width: calc(var(--container-lg) + (100vw - var(--container-lg)) / 2);
+    }
+    .container-right {
+        max-width: calc(var(--container-lg) + (100vw - var(--container-lg)) / 2);
+    }
+}
+
+@media (min-width: $breakpoint-xl) {
+    .container-left {
+        max-width: calc(var(--container-xl) + (100vw - var(--container-xl)) / 2);
+    }
+    .container-right {
+        max-width: calc(var(--container-xl) + (100vw - var(--container-xl)) / 2);
+    }
+}
+
+@media (min-width: $breakpoint-xxl) {
+    .container-left {
+        max-width: calc(var(--container-xxl) + (100vw - var(--container-xxl)) / 2);
+    }
+    .container-right {
+        max-width: calc(var(--container-xxl) + (100vw - var(--container-xxl)) / 2);
+    }
+}
+
+@media (min-width: $breakpoint-xxxl) {
+    .container-left {
+        max-width: calc(var(--container-xxxl) + (100vw - var(--container-xxxl)) / 2);
+    }
+    .container-right {
+        max-width: calc(var(--container-xxxl) + (100vw - var(--container-xxxl)) / 2);
+    }
+}

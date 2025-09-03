@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mati Sabagh - Baterista, Productor y Drum Doctor</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/splash.css">
+    <!-- Glide.js CSS -->
+    <link rel="icon" type="image/x-icon" href="assets/logo.ico">
+    <link rel="apple-touch-icon" href="assets/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/logo.png">
+    <link rel="stylesheet" href="plugins/glide/glide.core.min.css">
+    <link rel="stylesheet" href="plugins/glide/glide.theme.min.css">
+</head>
+
+<body id="body">
+    <div id="splash-screen">
+        <div class="name-container">
+            <p class="name_splash">MATI</p>
+            <p class="lastname_splash">SABAGH</p>
+        </div>
+    </div>
+    <header>
+        <h1>Mati Sabagh</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi" data-text="Sobre Mi">Sobre Mi</a></li>
+                <li><a href="#el-estudio" data-text="El estudio">El estudio</a></li>
+                <li><a href="#baterias" data-text="Baterías">Baterías</a></li>
+                <li><a href="#audios" data-text="Audios">Audios</a></li>
+                <li><a href="#faq" data-text="FAQ">FAQ</a></li>
+                <li><a href="#contacto" data-text="Hablemos">Hablemos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <video autoplay muted loop id="hero-video">
+                <source src="./assets/video-hero.mp4" type="video/mp4">
+            </video>
+            <div class="hero-content">
+                <div class="hero-header">
+                    <div class="social-links">
+                        <span>Seguime en</span>
+                        <a href="https://www.instagram.com/matisabagh"><img src="./assets/ri_instagram-fill.svg" alt="Instagram" width="16"
+                                height="16">@matisabagh</a>
+                    </div>
+                </div>
+                <div class="hero-main-content container">
+                    <h1 class="hero-title">
+                        <span class="hero-title-mati">MATI</span>
+                        <span class="hero-title-sabagh">SABAGH</span>
+                    </h1>
+                    <div class="hero-cards">
+                        <a href="#sobre-mi" class="card">
+                            <img src="assets/cover-sobreMi2.png" alt="Sobre Mí">
+                            <p>SOBRE MI</p>
+                        </a>
+                        <a href="#el-estudio" class="card">
+                            <img src="assets/cover-estudio2.png" alt="El Estudio">
+                            <p>EL ESTUDIO</p>
+                        </a>
+                        <a href="#baterias" class="card">
+                            <img src="assets/cover-baterias2.png" alt="Baterías">
+                            <p>BATERÍAS</p>
+                        </a>
+                        <a href="#audios" class="card">
+                            <img src="assets/cover-audios2.png" alt="Audios">
+                            <p>AUDIOS</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal de Equipamiento -->
+        <div id="equipamiento-modal" class="modal">
+            <div class="modal-content">
+                <div class="container mt-1 mt-md-5">
+                    <button class="modal-close-button"><img src="./assets/close.svg" alt="Cerrar"></button>
+                    <h2 class="section-title">EQUIPAMIENTO</h2>
+                    <div class="bateria-images-container"">
+                        <div class="bateria-images">
+                            <div class="equipamiento-category">
+                                <h3 class="">GEAR</h3>
+                                <ul>
+                                    <li>API 3124V</li>
+                                    <li>Heritage Audio Super 8</li>
+                                    <li>Thermionic Culture The Rooster 2</li>
+                                    <li>Heritage Audio HA-73EQx2 Elite</li>
+                                    <li>Universal Audio Apollo Twin MKII</li>
+                                    <li>Universal Audio Apollo 8P</li>
+                                </ul>
+                            </div>
+                            <div class="equipamiento-category">
+                                <h3>MICRÓFONOS</h3>
+                                <ul>
+                                    <li>Shure SM57 x2</li>
+                                    <li>Shure Beta52</li>
+                                    <li>Neumann km 184 x2</li>
+                                    <li>United Technologies UT47 FET</li>
+                                    <li>Neumann TLM 102</li>
+                                    <li>Sennheiser MD-421 x3</li>
+                                    <li>AKG C414 B ULS x2</li>
+                                    <li>AKG C214</li>
+                                    <li>AKG D112</li>
+                                    <li>AEA N8 x2</li>
+                                    <li>DW Mic Moon</li>
+                                    <li>Warm Audio wa-47jr</li>
+                                    <li>Warm Audio wa-84</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal de Baterías -->
+        <div id="baterias-modal" class="modal">
+            <div class="modal-content">
+                <div class="container mt-1 mt-md-5">
+                    <button class="modal-close-button"><img src="./assets/close.svg" alt="Cerrar"></button>
+                    <div id="bateria-modal-content"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <section id="sobre-mi" class="pb-5">
+                       
+            <div class="container-left mt-18">
+                <div>
+                    <div style="width: 100vw;" class="sobre-mi-title-desktop">
+                        <div class="container"> 
+                            <h2 class="my-0">Baterista de sesión,
+                            tours, drumdoctor 
+                            y productor.</h2>
+                        </div>
+
+                    </div>
+                     
+                    <div class="sobre-mi-content ">
+            
+                        <div class="image-content">
+                            <img src="assets/sobre-mi.jpg" alt="Mati Sabagh">
+                        </div>
+                         <div style="width: 100vw;" class="sobre-mi-title-mobile">
+                            <div class="container"> 
+                                <h2 class="my-0">Baterista de sesión,
+                                tours, drumdoctor y
+                                productor.</h2>
+                            </div>
+
+                        </div>
+                        <div class="text-content">
+                            <p>Comencé a tocar la batería a los 11 años. A partir de entonces, fui sumando experiencias musicales de todo tipo, incluyendo mis primeros pasos en estudios de grabación, donde realicé mi primera sesión como baterista a los 13.
+                                
+                                Soy oriundo de Córdoba, Argentina, y me gradué en la Escuela de Música Popular LA COLMENA, donde estudié armonía, arreglos y batería, además de instrumentos complementarios como piano, guitarra y bajo. Me formé también con destacados maestros como Hugo Ordanini (Tambor, Músicos del Centro, Piero, Pimpinela), con quien perfeccioné mi técnica, heredera del legendario Murray Spivack. También tomé clases con Palín Sosa, Oscar Giunta, Pipi Piazzolla, entre otros.
+                                
+                                Desarrollé una carrera sólida en Córdoba, tocando con numerosos artistas y bandas reconocidas de la escena local, como The Greets, Planeador V, entre otras. Combiné mi labor como baterista con sesiones de grabación y trabajos como Drum Doctor. A lo largo de mi carrera he tenido el privilegio de grabar con muchos artistas y productores de renombre, como Juan Blas Caballero, Jorge Rojas, Richard Coleman, entre otros. Estas experiencias me permitieron adquirir una gran formación en estudio y desarrollar una versatilidad que me permite adaptarme con naturalidad a distintos géneros, proyectos y contextos musicales.
+                                
+                                Gire junto a Airbag, L-gante, Coki Ramirez, Ariel Ardit, Horacio Banegas entre otros artistas de diferentes generos lo que refleja aun mas mi versatilidad como baterista.
+                                
+                                Actualmente resido en la Ciudad Autónoma de Buenos Aires, donde tengo mi propio estudio de grabación. Desde allí realizo grabaciones de forma remota para distintas partes del país y del mundo, además de trabajos como Drum Doctor para colegas.
+                                
+                                También participo activamente en proyectos en vivo de distintos estilos —rock, folclore, tango— siendo mi banda principal Rayos Láser. Además, formo parte del homenaje a Serú Girán junto a Pedro Aznar y David Lebón, dos referentes fundamentales del rock argentino.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="el-estudio" class="pt-2 pb-4 pb-md-7 pt-md-5">
+            <div class="container">
+                <div class="el-estudio-content">
+                    <div class="text-content">
+                        <p>El estudio esta pensado como un espacio versátil y profesional, donde tus canciones y producciones van a cobrar sentido. Cuento con 18 canales premium para capturar cada detalle de la batería. Además, dispongo de 7 baterías, 25 tambores y 40 platillos, que aportan variedad y carácter a tus canciones, elevando tanto la ejecución como el sonido final.</p>
+                        <p class="question">¿Sos baterista y tenés que grabar?</p>
+                        <p class="answer">Ofrezco el trabajo de técnico y DrumDoctor para que vengas solamente con sus palos a grabar!</p>
+                        <button class="btn" id="open-equipamiento-modal">Ver detalle de equipos <img src="assets/chevron_forward.svg" alt="chevron" class="btn-icon"></button>
+                    </div>
+                    <div class="image-content mt-3 mt-md-0">
+                        <div class="image-gallery">
+                            <img src="assets/estudio-01.png" alt="Estudio 1">
+                            <img src="assets/estudio-02.png" alt="Estudio 2">
+                            <img src="assets/estudio-03.png" alt="Estudio 3">
+                            <img src="assets/estudio-04.png" alt="Estudio 4">
+                        </div>
+                        <h2 class="">EL ESTUDIO</h2>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="baterias" class="pt-md-2 pb-10">
+            <div class="container mb-6">
+                <div class="baterias-content">
+                    <h2 class="my-4 my-md-3">BATERÍAS</h2>
+                    <div class="baterias-grid">
+                        <div class="item">
+                            <div class="bateria-item" data-bateria="mapex-orion">
+                                <img src="assets/Mapex Orion Series/cover.jpg" alt="Mapex Orion Series">
+                                <h3>Mapex Orion Series</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="bateria-item" data-bateria="ludwig-90th">
+                                <img src="assets/Ludwig 90th Anniversary/cover.jpg" alt="Ludwig 90th Anniversary">
+                                <h3>Ludwig 90th Anniversary</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="bateria-item" data-bateria="ludwig-super-classic">
+                                <img src="assets/Ludwig Super Classic 1965/cover.jpg" alt="Ludwig Super Classic 1965">
+                                <h3>Ludwig Super Classic 1965</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="bateria-item" data-bateria="dw-collectors">
+                                <img src="assets/DW Collectors Series/cover.jpg" alt="DW Collectors Series">
+                                <h3>DW Collectors Series</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="bateria-item" data-bateria="sonor-prolite">
+                                <img src="assets/Sonor Prolite Series/cover.jpg" alt="Sonor Prolite Series">
+                                <h3>Sonor Prolite Series</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="bateria-item" data-bateria="otros">
+                                <img src="assets/Otros/cover.jpg" alt="Otros">
+                                <h3>Otros</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h2>SNARES</h2>
+                            <div class="bateria-item" data-bateria="snares">
+                                <img src="assets/snares/cover.jpg" alt="Snares">
+                                <h3 class="sub-title">Ludwig, Dw, Slingerland, etc</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h2>PLATILLOS</h2>
+                            <div class="bateria-item" data-bateria="platillos">
+                                <img src="assets/platillos/cover.jpg" alt="Platillos">
+                                <h3 class="sub-title">Zildjian, Paiste, Sabian, etc</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h2>PERCUSIÓN</h2>
+                            <div class="bateria-item" data-bateria="percusion">
+                                <img src="assets/percusion/cover.jpg" alt="Percusión">
+                                <h3 class="sub-title">Ver más</h3>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+            </section>
+
+            <section id="audios" class="pb-10">
+                <div class="container">
+                    <div class="audios-content">
+                        <div class="audios-player-content">
+                            <div class="spotify-iframe-container">
+                                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7dmavxcDG8GKW1Gpb6YULp?utm_source=generator" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                        <div class="audios-text-content">
+                            <h2 class="section-title">ESCUCHÁ 
+                                CÓMO SUENA</h2>
+                            <p>Acá podés encontrar una selección de grabaciones en las que 
+                                participé como baterista, tanto en sesiones remotas como 
+                                presenciales. Cada track refleja distintos estilos, sonidos y 
+                                enfoques, adaptados a las necesidades de cada proyecto.</p>
+                            <div class="audio-links mt-3">
+                                <a href="https://open.spotify.com/playlist/7dmavxcDG8GKW1Gpb6YULp" target="_blank"><img src="./assets/spotify-color.svg" alt="Spotify"></a>
+                                <a href="https://www.youtube.com/user/MatiSabaghDrums" target="_blank"><img src="./assets/youtube-rojo.svg" alt="YouTube"></a>
+                                <a href="https://soundcloud.com/mati-sabagh-287030126/sets/drum-sounds" target="_blank"><img src="./assets/soundcloud.svg" alt="SoundCloud"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="soundcloud-player-content mt-n2">
+                        <iframe width="100%" height="350" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2035615722&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/mati-sabagh-287030126" title="Mati Sabagh" target="_blank" style="color: #cccccc; text-decoration: none;">Mati Sabagh</a> · <a href="https://soundcloud.com/mati-sabagh-287030126/sets/drum-sounds" title="DRUM SOUNDS" target="_blank" style="color: #cccccc; text-decoration: none;">DRUM SOUNDS</a></div>
+                     </div>
+                </div>
+            </section>
+
+
+        <section id="resenas" class="">
+            <div class="container-fluid pb-10">
+                <h2 class="section-title">RESEÑAS</h2>
+                <p class="section-subtitle mt-1">¿Querés sumarte a esta lista?</p>
+                <div class="glide mt-4">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <div class="resena-card ">
+                                    <div class="card-header">
+                                        <img src="assets/resenas/Sebastian_Schon.png" alt="Sebastian Schon">
+                                        <div class="card-info">
+                                            <p class="card-role">Músico, compositor, productor, ingeniero en sonido</p>
+                                            <h3 class="card-name">SEBASTIAN SCHON</h3>
+                                            <p class="card-credits">Natalia lafourcade, Aterciopelados, Miranda, Vicentico, etc</p>
+                                        </div>
+                                    </div>
+                                    <p class="card-text">Mi experiencia de grabar con Mati es excepcional. Junta lo genial, profesional y versátil que es como baterista, con lo sólido que es tanto su saber grabarse y el equipamiento, tanto a nivel audio, como a nivel del instrumento. Además tiene una habilidad asombrosa para elegir entre tantas opciones, la mejor, la que mejor se adapta a cada grabación. Todo esto en un clima de relax y buena onda. Mejor imposible.</p>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="resena-card ">
+                                    <div class="card-header">
+                                        <img src="assets/resenas/MARTIN_POMARES.png" alt="Martin Pomares">
+                                        <div class="card-info">
+                                            <p class="card-role">Ingeniero de grabación, Mezcla y Mastering</p>
+                                            <h3 class="card-name">MARTIN POMARES</h3>
+                                            <p class="card-credits">Andres Calamaro, Bersuit Vergarabat, Los Ratones Paranoicos, Marky Ramone</p>
+                                        </div>
+                                    </div>
+                                    <p class="card-text">Matias Sabagh es un fantástico baterista y Drum doctor, muy técnico, pero especialmente muy creativo en lo artístico y especialmente en lo sonoro, lo cual hace que combinado con los herramientas que tiene (baterias, Micrófonos, Pres y Room) sea una excelente opción para grabar baterías super profesionales.</p>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="resena-card ">
+                                    <div class="card-header">
+                                        <img src="assets/resenas/jose_Gabriel_Gentile.png" alt="Jose Gabriel Gentile">
+                                        <div class="card-info">
+                                            <p class="card-role">Multi platino Productor Musical / Ingeniero / Mixer</p>
+                                            <h3 class="card-name">JOSÉ GABRIEL GENTILE</h3>
+                                            <p class="card-credits">3 números 1 en las listas de Billboard USA</p>
+                                            <p class="card-credits">1 Billboard Award</p>
+                                        </div>
+                                    </div>
+                                    <p class="card-text">Desde hace años, Mati es mi primera elección como baterista, ya sea en mis producciones como en mis proyectos personales. Sus talentos exceden los estrictamente musicales, los cuales abarcan amplio conocimiento de diversos géneros, como el Rock en todas sus formas, el Funk, Pop, R&B, Jazz y Latin, sino también la capacidad de encontrar el audio requerido para cada grabación. Eso implica el manejo de diversas técnicas de grabación y una excelente recepción a las ideas planteadas por el artista o productor. No conozco artista que no haya quedado altamente satisfecho e impresionado con sus grabaciones.</p>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="resena-card ">
+                                    <div class="card-header">
+                                        <img src="assets/resenas/Mario_Breuer.png" alt="Mario Breuer">
+                                        <div class="card-info">
+                                            <p class="card-role">Productor, Ing de grabacion, mezcla y master</p>
+                                            <h3 class="card-name">MARIO BREUER</h3>
+                                            <p class="card-credits">Charly Garcia, Patricio Rey y sus redonditos de ricota, Fito Paez, Soda Stereo, Mercedes Sosa, Calamaro, etc</p>
+                                        </div>
+                                    </div>
+                                    <p class="card-text">Matias Sabagh es un artista que no solo toca increíblemente bien la batería sino que además crea un diseño y una estrategia para honrar cada tema que toca. Su sonido jamás es el mismo pero siempre es el mejor para cada tema. Es, además, un profesional que conoce el concepto del “Compromiso” Nunca llega tarde y siempre tiene un rato más para ver si se puede llevar el tema, un poco más allá. Tipo gracioso si los hay y gran parrillero, se destaca también como acróbata miniaturista. Siempre es un lujo y un placer tenerlo del otro lado del vidrio y de este lado de la parrilla.
+                                        Vamo arriba Turquito.</p>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="resena-card ">
+                                    <div class="card-header">
+                                        <img src="assets/resenas/Juan_Blas_Caballero.png" alt="Juan Blas Caballero">
+                                        <div class="card-info">
+                                            <p class="card-role">Productor, Compositor</p>
+                                            <h3 class="card-name">JUAN BLAS CABALLERO</h3>
+                                            <p class="card-credits">Abel Pintos, Soledad Pastorutti, Vicentico, Envidiosa, Reik; Richard Coleman, Etc</p>
+                                        </div>
+                                    </div>
+                                    <p class="card-text">Trabajo muy cómodo con Matías porque mas allá de la solidez en el toque, su versatilidad a la hora de afrontar distintos estilos y la precisión en la búsqueda del sonido, él siempre agrega una cuota extra de cariño y creatividad en cada proyecto donde participa. Tiene un estudio muy bien equipado y una enorme colección de baterías, además de una gran experiencia como Drums Doctor, lo que le permite acceder una enorme diversidad de sonidos.</p>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="resena-card ">
+                                    <div class="card-header">
+                                        <img src="assets/resenas/sebastian.png" alt="Sebastian De Perecave">
+                                        <div class="card-info">
+                                            <p class="card-role">Productor/Ingeniero de Mezcla</p>
+                                            <h3 class="card-name">SEBASTIÁN DE PEYRECAVE</h3>
+                                            <p class="card-credits">Fonseca, Kany García, Leonel García, Juan Luis Guerra, Alex Ubago, Marc Anthony, Chayanne, Etc</p>
+                                        </div>
+                                    </div>
+                                    <p class="card-text">Mati es el tipo de baterista con el que me gusta trabajar en los proyectos ya que sé que voy a contar con una gran interpretación que siempre está al servicio de la canción y también un sonido impecable. Tiene una variedad de instrumentos y tambores que le dan mucha versatilidad a la hora de encarar una producción. Súper recomendado.</p>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="resena-card ">
+                                    <div class="card-header">
+                                        <img src="assets/resenas/facundo.png" alt="Facundo Rodriguez">
+                                        <div class="card-info">
+                                            <p class="card-role">Ingeniero y Productor</p>
+                                            <h3 class="card-name">FACUNDO RODRIGUEZ</h3>
+                                            <p class="card-credits">Divididos, Eruca Sativa, David Lebón, Escalandrum, etc</p>
+                                        </div>
+                                    </div>
+                                    <p class="card-text">Musicalidad, audio y buen gusto - Siempre un placer trabajar con él.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="glide__bullets" data-glide-el="controls[nav]">
+                        <button class="glide__bullet" data-glide-dir="=0"></button>
+                        <button class="glide__bullet" data-glide-dir="=1"></button>
+                        <button class="glide__bullet" data-glide-dir="=2"></button>
+                        <button class="glide__bullet" data-glide-dir="=3"></button>
+                        <button class="glide__bullet" data-glide-dir="=4"></button>
+                        <button class="glide__bullet" data-glide-dir="=5"></button>
+                        <button class="glide__bullet" data-glide-dir="=6"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="como-trabajo">
+            <div class="container pb-8 pb-md-10">
+                <div class="como-trabajo-header">
+                    <h2 class="section-title">¿CÓMO TRABAJO?</h2>
+                    <a href="#contacto" class="btn mt-2 mt-md-0">Charlemos</a>
+                </div>
+                <div class="how-it-works-grid mb-5 mt-2 mt-md-0">
+                    <div class="how-it-works-item">
+                        <span>01</span>
+                        <h3>Envío de Material</h3>
+                        <p>Me envías las pistas de tus canciones junto con el BPM y la programación de batería que querés para cada tema. Si aún no tenés una idea definida de la batería, podemos trabajar juntos para crear una propuesta artística que se ajuste al espíritu de la canción.</p>
+                    </div>
+                    <div class="how-it-works-item">
+                        <span>02</span>
+                        <h3>Información Adicional</h3>
+                        <p>Es importante que los tracks estén a tempo y que me envíes un audio de referencia sobre cómo querés que suene la batería; puede ser un link de YouTube, Spotify, etc, para yo poder capturar la esencia y lograr el sonido que buscas</p>
+                    </div>
+                    <div class="how-it-works-item">
+                        <span>03</span>
+                        <h3>Entrega de Tracks</h3>
+                        <p>Una vez finalizada la grabación, puedo enviarte la sesión completa en ProTools, o bien los tracks separados en WAV listos para que los incorpores a tu DAW y empieces a mezclar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="">
+            <div class="container pb-6 pb-md-10">
+                <h2 class="section-title">PREGUNTAS FRECUENTES</h2>
+                <div class="accordion mt-n2 mt-md-0">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <div>¿Cómo voy a recibir los tracks?</div>
+                            <span class="icon"></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Una vez finalizada la grabación, te enviaré la sesión completa en ProTools, o bien los tracks separados en WAV listos para que los incorpores a tu DAW y empieces a mezclar.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <div>¿La maqueta tiene que estar sí o sí grabada con click?</div>
+                            <span class="icon"></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Sí.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <div>¿Cuántas tomas me mandás?</div>
+                            <span class="icon"></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Todas las que hagamos.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <div>¿Puedo hacerte devoluciones en el momento?</div>
+                            <span class="icon"></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>¡Claro! La idea es que vos estés del otro lado y yo te voy mandando por WhatsApp las tomas que voy haciendo para que me digas si te gusta el audio y lo que toco. Puedo cambiar todo lo que haga falta para que quedes conforme.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <div>¿Si te mando una programación de batería MIDI y necesito que la toques tal cual, podés?</div>
+                            <span class="icon"></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Sí, sin ningún problema.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <div>¿Si mi producción no tiene los instrumentos finales, es un problema?</div>
+                            <span class="icon"></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Para nada. Lo importante es que esté todo a tempo y que tengas en claro para qué lado va la producción, para yo poder interpretarla correctamente.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <div>¿Cuántos canales me mandás?</div>
+                            <span class="icon"></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Entre 16 y 18… depende del tipo de batería que use.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <div>¿Me mandás las baterías mezcladas?</div>
+                            <span class="icon"></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>No, las baterías se mandan crudas, listas para mezclar.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <div>¿Cuantizás las baterías?</div>
+                            <span class="icon"></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>No está incluido dentro de la grabación; es un servicio que cobro aparte.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <div>¿Qué pasa si quiero hacer correcciones una vez que me mandaste los tracks?</div>
+                            <span class="icon"></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Una vez que te mando los tracks, damos por finalizado el trabajo. Si querés hacer algún cambio después de que terminó la sesión, hay que agendar una sesión nueva y se cobra como una producción distinta. Por eso es importante que estés atento y me pidas todos los cambios que quieras mientras estamos grabando.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <div>¿Puedo ir a tu estudio a presenciar la sesión?</div>
+                            <span class="icon"></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Si estás en Buenos Aires, ¡más que invitado!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <div class="container pt-1 pt-md-3 pb-4">
+             <h2 class="pt-1 pt-md-2 mb-4">HABLEMOS</h2>
+            <div class="footer-content">
+               <div class="footer-container">
+                    <div class="footer-info mb-2">
+                        <img src="assets/logo.svg" alt="Mati Sabagh Logo" class="footer-logo">
+                        <div>
+                            <div class="name">
+                                Mati
+                            </div>
+                            <div class="lastname">
+                                Sabagh
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <p class="label">Email</p>
+                    <a href="mailto:matiasabagh@gmail.com" class="value">matiasabagh@gmail.com</a>
+                    <p class="label">Instagram</p>
+                    <a href="https://www.instagram.com/matisabagh" class="value" target="_blank">@matisabagh</a>
+                </div>
+                <div class="footer-form">
+                    
+                    <form class="contact-form mt-2 mt-md-0" id="contact-form">
+                        <input type="text" placeholder="Nombre" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="text" placeholder="País" required>
+                        <textarea placeholder="Escribí tú consulta" rows="10" required></textarea>
+                        <button type="submit" class="btn btn-primary"><img src="assets/send.svg" alt="Send Icon"> Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="battery-modal" class="modal">
+        <div class="modal-content">
+            <button class="close-button" id="close-modal">
+                X
+            </button>
+            <h1 id="modal-title"></h1>
+            <div id="modal-gallery" class="gallery-container">
+                <!-- Las imágenes de la batería se cargarán aquí -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Glide.js JavaScript -->
+    <script src="plugins/glide/glide.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        window.addEventListener('load', () => {
+            const splashScreen = document.getElementById('splash-screen');
+            setTimeout(() => {
+                splashScreen.classList.add('hidden');
+                window.scrollTo(0, 0);
+                const heroVideo = document.getElementById('hero-video');
+                if (heroVideo) {
+                    heroVideo.play();
+                }
+            }, 800);
+        });
+    </script>
+    <script src="./js/form-submission.js"></script>
+    <a href="#body" class="scroll-to-top">
+        <img src="./assets/boton-subir.svg" alt="Subir">
+    </a>
+</body>
+
+</html>

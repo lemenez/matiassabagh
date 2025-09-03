@@ -1,0 +1,69 @@
+/* ========================================
+   IMPORTS
+======================================== */
+/* Work Sans - Local Fonts */
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf') format('truetype-variations');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../fonts/Work_Sans/WorkSans-Italic-VariableFont_wght.ttf') format('truetype-variations');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+@import 'variables';
+@import 'layout';
+@import 'header';
+@import 'hero';
+@import 'sobre-mi';
+@import 'helpers';
+@import 'el-estudio';
+@import 'modal';
+@import 'audios';
+@import 'resenas';
+@import 'como-trabajo';
+@import 'faqs';
+@import 'footer';
+@import 'baterias';
+@import 'scroll-to-top';
+/* ========================================
+   VARIABLES
+======================================== */
+:root {
+    --primary-bg: #101010;
+    --secondary-bg: #2a2a2a;
+    --accent-bg: #085358;
+    --text-primary: #E5E5DE;
+    --text-primary-title: #2EBEC8;
+    --text-secondary: #ccc;
+    --overlay-dark: rgba(0, 0, 0, 0.5);
+    --overlay-darker:rgba(16, 16, 16, 0.75);
+    --card-gradient: linear-gradient(179.96deg, rgba(33, 33, 33, 0) 0.04%, #212121 90.62%);
+}
+
+html {
+    font-size: 11px; /* Base font size para rem */
+}
+
+body, textarea, input, button {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* ========================================
+   BASE STYLES
+======================================== */
+body {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-bg);
+    color: var(--text-primary);
+    overflow-x: hidden;
+    position: relative;
+}

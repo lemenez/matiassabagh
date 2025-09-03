@@ -1,0 +1,127 @@
+/* ========================================
+   HEADER & NAVIGATION
+======================================== */
+header {
+    position: fixed;
+    top: 62%;
+    right: 20px;
+    transform: translateY(-62%);
+    z-index: 1000;
+    background: none;
+}
+
+header h1 {
+    display: none; /* Ocultar el título del header */
+}
+
+nav {
+    background: none;
+}
+
+nav ul {
+    list-style: none; /* Se eliminará y se usará ::before para los bullets */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+nav ul li {
+    margin: 0;
+    position: relative;
+    padding-right: 18px; /* Espacio para el bullet */
+    padding-left: 0;
+}
+
+nav ul li::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px; /* Tamaño del SVG */
+    height: 10px; /* Tamaño del SVG */
+    background-image: url('../assets/Ellipse 3.svg'); /* Bullet no seleccionado */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+nav ul li.active::before {
+    background-image: url('../assets/Ellipse 4.svg'); /* Bullet seleccionado */
+}
+
+nav ul li a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 1.1rem; /* 18px / 12px = 1.5rem */
+    font-weight: 400;
+    font-style: normal; /* SemiBold no es una propiedad CSS, se usa font-weight */
+    leading-trim: none;
+    line-height: 100%;
+    letter-spacing: 0%;
+    transition: color 0.3s ease;
+    display: block;
+
+    text-align: end;
+}
+
+/* Estilos cuando la navegación está sobre el footer blanco */
+header.over-footer {
+    nav ul li {
+        position: relative;
+        
+        a {
+            position: relative;
+            
+            /* Crear una capa superpuesta con el color oscuro */
+            &::after {
+                content: attr(data-text);
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                color: #212121;
+                clip-path: polygon(0 0, 100% 0, 100% var(--overlap-percentage, 0%), 0 var(--overlap-percentage, 0%));
+                pointer-events: none;
+            }
+        }
+        
+        &.active a::after {
+            color: #085358; /* Color de acento para el enlace activo */
+        }
+        
+        /* Efecto gradual para bullets */
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 10px;
+            height: 10px;
+            background-image: url('../assets/Ellipse 3.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            filter: invert(1);
+            clip-path: polygon(0 0, 100% 0, 100% var(--overlap-percentage, 0%), 0 var(--overlap-percentage, 0%));
+        }
+        
+        &.active::after {
+            background-image: url('../assets/Ellipse 4.svg');
+        }
+    }
+}
+
+nav ul li.active a {
+    font-weight: 600;
+}
+
+/* Responsive para móviles */
+@media (max-width: $breakpoint-md) {
+    header {
+        display: none;
+    }
+}

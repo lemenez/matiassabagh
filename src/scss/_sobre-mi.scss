@@ -1,0 +1,141 @@
+/* Sobre Mi Section */
+#sobre-mi {
+    background-color: var(--primary-bg);
+    color: white;
+    position: relative;
+    z-index: 1;
+    margin-top: calc(((((100vw - 48px) / 2 * (300 / 195))  * 2) + 36px) - (((100vw - 48px) / 2 * (300 / 195)) / 2));
+
+    @media (min-width: $breakpoint-md) {
+        margin-top: calc((var(--container-md) - 78px) / 4 * (391 / 299.75) / 2 * -1);
+        padding-top: calc((var(--container-md) - 78px) / 4 * (391 / 299.75) / 2);
+    }
+
+    @media (min-width: $breakpoint-lg) {
+        margin-top: calc((var(--container-lg) - 78px)/ 4 * (391 / 299.75) / 2 * -1);
+        padding-top: calc((var(--container-lg) - 78px) / 4 * (391 / 299.75) / 2);
+    }
+
+    @media (min-width: $breakpoint-xl) {
+        margin-top: calc((var(--container-xl) - 78px) / 4 * (391 / 299.75) / 2 * -1);
+        padding-top: calc((var(--container-xl) - 78px) / 4 * (391 / 299.75) / 2);
+    }
+
+    @media (min-width: $breakpoint-xxl) {
+        margin-top: calc((var(--container-xxl) - 78px) / 4 * (391 / 299.75) / 2 * -1);
+        padding-top: calc((var(--container-xxl) - 78px) / 4 * (391 / 299.75) / 2);
+    }
+
+    @media (min-width: $breakpoint-xxxl) {
+        margin-top: calc((var(--container-xxxl) - 78px) / 4 * (391 / 299.75) / 2 * -1);
+        padding-top: calc((var(--container-xxxl) - 78px) / 4 * (391 / 299.75) / 2);
+    }
+}
+
+#sobre-mi .sobre-mi-content {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $breakpoint-md) {
+        flex-direction: row;
+        align-items: stretch;
+        gap: 26px;
+    }
+}
+
+#sobre-mi .text-content {
+    flex: 1;
+    padding: 0 15px;
+    @media (min-width: $breakpoint-md) {
+        padding: 0;
+    }
+}
+
+#sobre-mi .image-content {
+ 
+    @media (min-width: $breakpoint-md) {
+        width: calc(50vw - 13px);
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+    }
+}
+
+#sobre-mi .image-content img {
+    width: 100%;
+    height: auto;
+    /* Permite que la imagen ajuste su altura automáticamente */
+    object-fit: cover;
+    /* Asegura que la imagen se ajuste dentro del contenedor sin recortarse */
+    object-position: center;
+    /* Centra la imagen */
+    aspect-ratio: 940/816;
+}
+
+
+#sobre-mi .sobre-mi-title-desktop {
+    display: none;
+       
+    @media (min-width: $breakpoint-md) {
+        display: block;
+    }
+}
+
+#sobre-mi .sobre-mi-title-mobile {
+    display: block;
+    @media (min-width: $breakpoint-md) {
+        display: none;
+    }
+}
+
+#sobre-mi h2 {
+    position: absolute;
+    bottom: -8.5rem;
+    left: 0;
+    font-size: 3.3rem;
+    color: white;
+    white-space: pre-line;
+    font-weight: 800;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    z-index: 2;
+    line-height: 105%;
+    padding: 0 15px;
+    @media (min-width: $breakpoint-sm) {
+        bottom: -6rem;
+    }
+    @media (min-width: $breakpoint-md) {
+        font-size: 3.9rem;
+        top: -10rem;
+        bottom: unset;
+    }
+
+    @media (min-width: $breakpoint-xl) {
+        font-size: 4.3rem;
+        top: -11rem;
+    }
+
+    @media (min-width: $breakpoint-xxl) {
+        font-size: 4.7rem;
+        top: -12rem;
+    }
+
+    @media (min-width: $breakpoint-xxxl) {
+        font-size: 5.7rem;
+    }
+}
+
+#sobre-mi .text-content p {
+    font-weight: 400;
+    font-size: 1.40rem;
+    line-height: 150%;
+    letter-spacing: 0%;
+    margin: 0;
+    white-space: pre-line;
+    margin-top: 12rem;
+    /* Colapsa los espacios en blanco pero respeta los saltos de línea */
+    @media (min-width: $breakpoint-md) {
+        font-size: 1.16rem;
+        margin-top: 0;
+    }
+}

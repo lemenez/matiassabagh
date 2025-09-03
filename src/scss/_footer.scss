@@ -1,0 +1,164 @@
+#contacto {
+  background-color: #fff;
+  color: #212121;
+
+  h2 {
+        text-align: start;
+        font-size: 3.3rem;
+        white-space: pre-line;
+        font-weight: 800;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+        position: relative;
+        line-height: 100%;
+        margin: 0;
+        @media (min-width: $breakpoint-md) {
+            font-size: 3.9rem;
+            text-align: center;
+        }
+
+        @media (min-width: $breakpoint-xl) {
+            font-size: 4.3rem;
+        }
+
+        @media (min-width: $breakpoint-xxl) {
+            font-size: 4.7rem;
+        }
+
+        @media (min-width: $breakpoint-xxxl) {
+            font-size: 5.7rem;
+        }
+    }
+
+  .footer-content {
+    display: flex;
+    gap: 26px;
+    flex-direction: column;
+    align-items: flex-start;
+    @media (min-width: $breakpoint-md) {
+        flex-direction: row;
+    }
+  }
+  .footer-container {
+    flex: 1;
+  }
+  .footer-info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    .name {
+        font-weight: 500;
+        font-size: 3.5rem;
+        line-height: 80%;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+    }
+    .lastname {
+        font-weight: 800;
+        font-size: 3.5rem;
+        line-height: 80%;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+    }
+    .footer-logo {
+      width: 85px;
+    }
+
+    p {
+      margin: 5px 0;
+      font-size: 1rem;
+
+      &.email,
+      &.instagram {
+        font-weight: bold;
+      }
+    }
+  }
+  .label {
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin: 2rem 0 2px 0;
+  }
+
+  .value {
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin: 0;
+    text-decoration: none;
+    color: #212121;
+  }
+  
+  .footer-form {
+    flex: 1;
+    width: 100%;
+    @media (min-width: $breakpoint-md) {
+        width: 600px;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        padding: 1.3rem;
+        margin-bottom: .7rem;
+        border: 1px solid #ACACAC;
+        border-radius: 3px;
+        font-size: 1.15rem;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: 0%;
+
+        &::placeholder {
+          color: #212121;
+        }
+      }
+
+      textarea {
+        resize: vertical;
+      }
+
+      .btn-primary {
+        background-color: #085358;
+        color: #fff;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 100%;
+        letter-spacing: 0%;
+        width: 150px;
+        margin: 0;
+        height: 60px;
+        @media (min-width: $breakpoint-md) {
+          height: auto;
+        }
+        img {
+          margin-right: 10px;
+          width: 20px;
+          height: 20px;
+        }
+
+        // &:hover {
+        //   background-color: #0056b3;
+        // }
+      }
+    }
+  }
+}

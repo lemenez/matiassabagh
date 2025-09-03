@@ -1,0 +1,81 @@
+// Helper para márgenes y paddings
+// Basado en REM (12px = 1rem)
+
+// Márgenes
+@for $i from 0 through 20 {
+  .mt-#{$i} { margin-top: #{$i}rem !important; }
+  .mr-#{$i} { margin-right: #{$i}rem !important; }
+  .mb-#{$i} { margin-bottom: #{$i}rem !important; }
+  .ml-#{$i} { margin-left: #{$i}rem !important; }
+  .mx-#{$i} { margin-left: #{$i}rem !important; margin-right: #{$i}rem !important; }
+  .my-#{$i} { margin-top: #{$i}rem !important; margin-bottom: #{$i}rem !important; }
+  .m-#{$i} { margin: #{$i}rem !important; }
+}
+
+// Paddings
+@for $i from 0 through 20 {
+  .pt-#{$i} { padding-top: #{$i}rem !important; }
+  .pr-#{$i} { padding-right: #{$i}rem !important; }
+  .pb-#{$i} { padding-bottom: #{$i}rem !important; }
+  .pl-#{$i} { padding-left: #{$i}rem !important; }
+  .px-#{$i} { padding-left: #{$i}rem !important; padding-right: #{$i}rem !important; }
+  .py-#{$i} { padding-top: #{$i}rem !important; padding-bottom: #{$i}rem !important; }
+  .p-#{$i} { padding: #{$i}rem !important; }
+}
+
+// Clases especiales
+.mt-auto { margin-top: auto !important; }
+.mr-auto { margin-right: auto !important; }
+.mb-auto { margin-bottom: auto !important; }
+.ml-auto { margin-left: auto !important; }
+.mx-auto { margin-left: auto !important; margin-right: auto !important; }
+.my-auto { margin-top: auto !important; margin-bottom: auto !important; }
+
+// Clases para márgenes negativos
+@for $i from 1 through 5 {
+  .mt-n#{$i} { margin-top: -#{$i}rem !important; }
+  .mr-n#{$i} { margin-right: -#{$i}rem !important; }
+  .mb-n#{$i} { margin-bottom: -#{$i}rem !important; }
+  .ml-n#{$i} { margin-left: -#{$i}rem !important; }
+}
+
+// Mixin para generar clases responsivas de margen y padding
+@mixin generate-spacing-classes($prefix, $property) {
+  @each $breakpoint-name, $breakpoint-value in (
+    sm: $breakpoint-sm,
+    md: $breakpoint-md,
+    lg: $breakpoint-lg,
+    xl: $breakpoint-xl,
+    xxl: $breakpoint-xxl,
+    xxxl: $breakpoint-xxxl
+  ) {
+    @media (min-width: $breakpoint-value) {
+      @for $i from 0 through 20 {
+        .#{$prefix}-#{$breakpoint-name}-#{$i} { #{$property}: #{$i}rem !important; }
+      }
+      .#{$prefix}-#{$breakpoint-name}-auto { #{$property}: auto !important; }
+    }
+  }
+}
+
+// Generar clases de margen responsivas
+@include generate-spacing-classes(mt, margin-top);
+@include generate-spacing-classes(mr, margin-right);
+@include generate-spacing-classes(mb, margin-bottom);
+@include generate-spacing-classes(ml, margin-left);
+@include generate-spacing-classes(mx, margin-left);
+@include generate-spacing-classes(mx, margin-right);
+@include generate-spacing-classes(my, margin-top);
+@include generate-spacing-classes(my, margin-bottom);
+@include generate-spacing-classes(m, margin);
+
+// Generar clases de padding responsivas
+@include generate-spacing-classes(pt, padding-top);
+@include generate-spacing-classes(pr, padding-right);
+@include generate-spacing-classes(pb, padding-bottom);
+@include generate-spacing-classes(pl, padding-left);
+@include generate-spacing-classes(px, padding-left);
+@include generate-spacing-classes(px, padding-right);
+@include generate-spacing-classes(py, padding-top);
+@include generate-spacing-classes(py, padding-bottom);
+@include generate-spacing-classes(p, padding);

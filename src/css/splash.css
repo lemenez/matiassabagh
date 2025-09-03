@@ -1,0 +1,50 @@
+/* Estilos para la pantalla de carga */
+#splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #101010;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease-out;
+    background-image: url('../assets/logo-mati.svg');
+    background-size: min(90vw, 90vh);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#splash-screen.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#splash-screen .name-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+#splash-screen p.name_splash {
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 80%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#splash-screen p.lastname_splash {
+    font-weight: 800;
+    font-size: 3.5rem;
+    line-height: 80%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    margin: 0;
+}

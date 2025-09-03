@@ -1,0 +1,13 @@
+.scroll-to-top {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 1000;
+  
+  img {
+    width: 100%;
+  }
+}
