@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (contactForm) {
         contactForm.addEventListener('submit', async (event) => {
-            event.preventDefault(); // Previene el envío por defecto del formulario
+            // event.preventDefault(); // Previene el envío por defecto del formulario
 
             // Aquí iría la lógica para enviar el email en el futuro
             // Por ahora, solo un console.log y un mensaje al usuario
