@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 'Mapex Orion Series 14x5,5',
                 'Black Panther Premium 14x6,5',
                 'Ludwig&Ludwig 1920 universal 14x4',
-                'Slingerland RadioKing 14x7 1940',
+                'Slingerland RadioKing 1940 14x7',
                 'Brady Jarra 14x6,5',
                 'Dw Collector 14x5,5',
                 'Dw Collector Maple/Mahogany 14x7',
